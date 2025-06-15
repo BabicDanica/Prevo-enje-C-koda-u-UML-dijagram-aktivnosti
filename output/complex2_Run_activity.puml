@@ -1,0 +1,35 @@
+@startuml
+start
+: var sum = 0;
+: var x = 3;
+: var y = 5;
+group try
+repeat
+: inti=0;
+if (x>y) then (yes)
+#palegreen:sum=sum+x;
+(no) elseif (x==y) then (yes)
+switch (x)
+case (1)
+#palegreen:sum=sum+1;
+: break;;
+case (2)
+#palegreen:sum=sum+2;
+: break;;
+case (default)
+#palegreen:sum=sum+10;
+endswitch
+#palegreen:sum=sum+y;
+endif
+#palegreen:x=x+1;
+repeat while (i<5)
+end group
+group catch (Exception e)
+#palegreen:sum=-1;
+end group
+group finally
+#palegreen:sum=sum+100;
+end group
+: returnsum;;
+stop
+@enduml

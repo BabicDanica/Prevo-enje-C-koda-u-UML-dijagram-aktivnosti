@@ -1,0 +1,10 @@
+@startuml
+start
+: int i;
+: i=0;
+while (i<5)
+: int result = i*2;
+: i=i+1;
+endwhile
+stop
+@enduml

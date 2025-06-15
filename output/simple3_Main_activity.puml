@@ -1,0 +1,6 @@
+@startuml
+start
+#palegreen:Console.WriteLine<missing ';'>
+#palegreen:("Hello, World!");
+stop
+@enduml

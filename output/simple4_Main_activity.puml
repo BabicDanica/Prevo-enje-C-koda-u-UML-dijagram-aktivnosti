@@ -1,0 +1,12 @@
+@startuml
+start
+: int time = 22;
+if (time<10) then (yes)
+: Console.WriteLine;
+: ("Good morning.");
+else (nothing)
+: Console.WriteLine;
+: ("Good evening.");
+endif
+stop
+@enduml

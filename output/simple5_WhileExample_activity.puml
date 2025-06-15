@@ -1,0 +1,11 @@
+@startuml
+title Activity Diagram for class WhileExample
+start
+:start method Run;
+:var i = 10;
+while (i > 0) is (true)
+:i = i - 1;
+endwhile
+:end method Run;
+stop
+@enduml

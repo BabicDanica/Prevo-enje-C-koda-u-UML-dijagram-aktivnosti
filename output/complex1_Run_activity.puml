@@ -1,0 +1,23 @@
+@startuml
+start
+: int x = 3;
+group try
+switch (x)
+case (1)
+#palegreen:x=10;
+: break;;
+case (3)
+#palegreen:x=30;
+: break;;
+case (default)
+#palegreen:x=0;
+endswitch
+end group
+group catch (Exception e)
+#palegreen:x=-1;
+end group
+group finally
+#palegreen:x=x+1;
+end group
+stop
+@enduml

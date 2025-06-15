@@ -1,0 +1,18 @@
+@startuml
+start
+: int x = 0;
+: int y = 8;
+if (x>5) then (yes)
+: y=y+1;
+(no) elseif (x<5) then (yes)
+: y=y-4;
+else (nothing)
+: pass;
+endif
+if (x>5) then (yes)
+: y=y+1;
+else (nothing)
+: pass;
+endif
+stop
+@enduml

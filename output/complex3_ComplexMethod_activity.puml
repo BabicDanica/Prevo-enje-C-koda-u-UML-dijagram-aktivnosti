@@ -1,0 +1,24 @@
+@startuml
+start
+: int limit = 3;
+: int sum = 0;
+: int i = 0;
+while (i<limit)
+: sum=sum+i;
+: i=i+1;
+endwhile
+repeat
+: i=i-1;
+repeat while (i>0)
+: intj=0;
+while (j<5)
+if (j%2==0) then (yes)
+: sum=sum+j;
+else (nothing)
+: sum=sum-j;
+endif
+: j++;
+endwhile
+: return;;
+stop
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+start
+group try
+: int x = 5/0;
+: returnx;;
+end group
+group catch (Exception e)
+: return-1;;
+end group
+group finally
+#palegreen:Console.WriteLine<missing ';'>
+#palegreen:("Done");
+end group
+stop
+@enduml
